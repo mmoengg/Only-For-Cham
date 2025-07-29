@@ -3,7 +3,7 @@
 팝업의 신이 되어보자!
 
 # LINK
-https://only-for-cham.vercel.app/
+https://only-for-cham.vercel.app/ (PC 모드)
 
 # How to play
 ### 350점을 넘기면 우승!
