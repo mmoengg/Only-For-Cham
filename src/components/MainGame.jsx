@@ -83,10 +83,10 @@ export default function MainGame() {
             return arr;
         });
 
-        // 1초 후 카드 비활성화
+        // 1.5초 후 카드 비활성화
         hideCardTimeout.current = setTimeout(() => {
             setCardStates(Array(CARD_COUNT).fill("off"));
-        }, 1000);
+        }, 1500);
 
         // 2초 후에는 다음 카드 활성화 시도
         showNextCardTimeout.current = setTimeout(() => {
@@ -172,9 +172,9 @@ export default function MainGame() {
                 handleReset={handleReset}
                 isPlaying={isPlaying}
             />
-            <div className="w-full px-6 flex items-center justify-center flex-wrap">
+            <div className="w-full h-full px-6 flex items-center justify-center flex-wrap">
                 {cardStates.map((type, index) => (
-                    <div key={index} className="w-1/5 h-[170px] p-3">
+                    <div key={index} className="w-1/5 h-[160px] p-3">
                         <button
                             onClick={() => handleCardClick(index)}
                             className="w-full h-full rounded"
