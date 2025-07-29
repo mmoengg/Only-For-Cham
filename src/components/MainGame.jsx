@@ -4,7 +4,7 @@ import GameStatusTitle from "@/components/GameStatusTitle";
 import { useEffect, useState, useRef } from "react";
 
 const CARD_COUNT = 20;
-const GAME_TIME = 45;
+const GAME_TIME = 60;
 
 export default function MainGame() {
     const [score, setScore] = useState(0);
